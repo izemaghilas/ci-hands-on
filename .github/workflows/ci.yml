@@ -13,7 +13,7 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: 16.14.2
+      - name: Install dependencies
+        run: npm install
       - name: Run user unit tests
-        run: |
-          npm install
-          npm test
+        run: npm test
